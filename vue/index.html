@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>得到</title>
+    <link rel="stylesheet" href="/dist/css/common.css">
+    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js "></script>
+</head>
+<body>
+<div id="app" class="container">
+    <div class="todo-wrapper">
+        <todo-header></todo-header>
+        <div class="todo-content">
+            <todo-report></todo-report>
+            <todo-list></todo-list>
+        </div>
+    </div>
+    <div class="footer">
+      <todo-footer></todo-footer>
+    </div>
+</div>
+<template id="todo-footer">
+  <div class="todo-footer-title">
+    <img src="http://piccdn.igetget.com/img/201703/02/201703021606151488005887.jpg@750w" />
+      <div class="title">
+          <h4>第318期丨远见与权谋</h4>
+        <p>
+          <span class="text-time">09:54</span>
+          <span class="text-intr">
+              - 罗辑思维
+          </span>
+        </p>
+      </div>
+    <img class="up" src="/src/img/上拉.png" />
+    <img class="play" src="/src/img/播放.png" />
+  </div>
+</template>
+<template id="todo-list">
+  <ul class="todo-list">
+    <todo-item v-for="item in collection"></todo-item>
+  </ul>
+</template>
+ <template id="todo-report">
+  <div class="todo-content-title">
+      <div class="h3"><img src="/src/img/播放.png" />播放全部 已更新324条</div>
+      <p class="task-report">
+          <span class="task-remain">
+              <img src="/src/img/排序.png" />倒序
+          </span>
+      </p>
+  </div>
+</template>
+
+<template id="todo-item">
+        <li class="todo-item task-done">
+            <!-- <span class="label important">
+                        <ul class="action-pick-label action-popup">
+                            <li class="important">Important</li>
+                            <li class="normal">Normal</li>
+                            <li class="other">Whatever</li>
+                            <li><img src="/src/img/播放.png" alt=""></li>
+                        </ul>
+                    </span> -->
+            <img src="/src/img/播放.png" alt="">
+            <div class="text">
+            <span class="h2">第318期丨远见与权谋</span>
+            <p>
+                <span>08-12</span>
+                <span>时长13:00</span>
+                <span>已播完</span>
+            </p>
+            </div>
+            <div class="doc"><img src="/src/img/文档.png" /></div>
+            <div class="more"><img src="/src/img/更多.png" /></div>
+
+            <!-- <div class="todo-action">
+                <span class="more">
+                <span></span>
+                <span></span>
+                <span></span>
+                </span>
+            </div> -->
+        </li>
+    </template>
+<template id="todo-header">
+  <div class="todo-header">
+                <div class="overlay"></div>
+                <div class="clearfix">
+                <span class="h1">罗辑思维</span>
+                <span class="h2">和你一起终生学习</span>
+             </div>
+             <div class="nav">
+               <ul>
+                 <li><img src="/src/img/搜索.png">搜索</li>
+                 <li><img src="/src/img/详情.png">详情</li>
+                 <li><img src="/src/img/下载.png">下载</li>
+                 <li style="border-right:none"><img src="/src/img/分享.png">分享</li>
+               </ul>
+             </div>
+</template>
+<script type="text/javascript" src="http://cdn.bootcss.com/vue/2.3.2/vue.min.js"></script>
+<script src="/dist/js/common.js"></script>
+</body>
+
+</html>

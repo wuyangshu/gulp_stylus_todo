@@ -1,0 +1,225 @@
+$bg_color = #f5f5f5
+$base_font = 'Open Sans', sans-serif
+$header_image = 'http://piccdn.igetget.com/img/201703/02/201703021606151488005887.jpg@750w'
+border-radius()
+    -webkit-border-radius arguments
+    -moz-border-radius arguments
+    border-radius arguments
+*
+    margin 0
+    padding 0
+html, body
+    height 100%
+    width 100%
+body
+    background $bg_color
+    font-family $base_font
+    font-size 0.55555rem
+.clearfix
+    overflow auto
+    zoom 1
+.container
+    height 100%
+    width 100%
+    // justify-content center
+    // align-items center
+    // flex-flow row wrap
+.todo-wrapper
+    background #fff
+    width 100%
+    height 5.55556rem
+.todo-header//header 模块
+    height 5.55556rem
+    width 100%
+    background url($header_image) no-repeat
+    background-size cover
+    position relative
+    .overlay
+      position absolute
+      top 0
+      left 0
+      right 0
+      bottom 0
+      background rgba(0,0,0, .4)
+    .clearfix
+      color #fff
+      display block
+      position relative
+      margin-left 0.40741rem
+      .h1
+        display block
+        margin-top 2.96296rem
+        font-size 0.55556rem
+      .h2
+        display block
+        margin-top 0.14815rem
+        font-size 0.37037rem
+    .nav
+      justify-content center
+      align-items center
+      text-align center
+      vertical-align:middle
+      width 100%
+      position absolute
+      display flex
+      color #fff
+      list-style none
+      font-size 0.44444rem
+      margin-top 0.25926rem
+      ul
+        width 100%
+        li
+          width 23.7%
+          float left
+          padding 0 0.05555rem
+          border-right 0.01851rem solid #fff
+          img
+            vertical-align:middle
+            line-height 0.48148rem
+            margin 0 0.11111rem
+            height 0.48148rem
+            width 0.48148rem
+.todo-content
+    .todo-content-title
+        display flex
+        height 1.37037rem
+        line-height 1.37037rem
+        justify-content center
+        align-items center
+        border-bottom 1px solid #e7e7e7
+        .h3
+            flex 4
+            font-size 0.44444rem
+            line-height 0.62963rem
+            font-weight normal
+            color #7a7a7a
+            margin-left 0.25926rem
+            justify-content center
+            align-items center
+            img
+                vertical-align:middle
+                height 0.62963rem
+                width 0.62963rem
+                margin-right 0.18519rem
+        .task-report
+            flex 1
+            font-size 0.44444rem
+            line-height 0.62963rem
+            justify-content center
+            align-items center
+            color #afafaf
+            img
+                vertical-align:middle
+                height 0.62963rem
+                width 0.62963rem
+                margin-right 0.18519rem
+    .todo-list
+        list-style none
+        .todo-item
+            height 1.66667rem
+            align-items center
+            display flex
+            border-bottom 1px solid #e7e7e7
+            position relative
+            &.task-done
+                .text
+                    color #7a7a7a
+            img
+                flex 1
+                height 0.74074rem
+                width 0.74074rem
+                margin-left 0.29629rem
+                vertical-align:middle
+            .text
+                flex 8
+                margin-left 0.25926rem
+                .h2
+                    font-size 0.48148rem
+                p
+                    font-size 0.33333rem
+                    span
+                        margin-right 0.22222rem
+            .doc
+                flex 1
+                float right
+                img
+                    height 0.74074rem
+                    width 0.74074rem
+            .more
+                flex 1
+                float right
+                margin-right 0.29629rem
+                img
+                    height 0.74074rem
+                    width 0.74074rem
+.footer
+    position fixed
+    background #eef3f2
+    z-index 111111
+    height 1.45rem
+    width 100%
+    top 16.3rem
+    right 0
+    left 0
+    bottom 0
+    .todo-footer-title
+        align-items center
+        display flex
+        img
+            margin 0.17815rem
+            height 1.03704rem
+            width 1.03704rem
+            flex 1
+        .title
+            font-size 0.37037rem
+            flex 8
+            .h4
+                font-size 0.44444rem
+                color #848988
+            p
+                font-size 0.33333rem
+                color #b7bcbb
+                margin-top 0.11111rem
+                .text-time
+                    margin-right 0.55556rem
+        .up
+            flex 1
+            height 0.59259rem
+            width 0.59259rem
+        .play
+            flex 1
+            height 0.92593rem
+            width 0.92593rem
+
+
+
+
+            // .action-popup
+            //     display none
+            // .label
+            //     display inline-block
+            //     background $base_color
+            //     width 15px
+            //     height 15px
+            //     border-radius 50%
+            //     float left
+            //     margin-right 10px
+            //     position relative
+            //     cursor pointer
+// .todo-footer
+//     .todo-footer-title
+//         display block
+//         position fixed
+//         height 1.37037rem
+//         width 100%
+//         z-index !improtant
+//         margin-top 15.81481rem
+//         background red
+//         h2
+//             font-size 1.5em
+//             font-weight normal
+//             color $base_dark
+//         .task-report
+//             font-size .9em
+//             color #afafaf
+//             margin-top 5px
